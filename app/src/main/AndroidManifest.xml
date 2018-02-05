@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tpan.textreader">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Planner Scanner"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Main2"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="ocr" />
+
+        <activity android:name=".list" />
+        <activity android:name=".Camera" />
+        <activity android:name=".Setting" />
+        <activity android:name=".ToDoListActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tpan.textreader.MainActivity">
+    
+    <!--<SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/textView"
+        android:layout_height="match_parent" /> -->
+
+    <!--<ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/text"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />-->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="600dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="23dp"
+        android:text="Text Here" />
+        <!--android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"-->
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:onClick="getTextFromImage"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="19dp"
+        android:text="Extract Text" />
+
+    <Button
+        android:id="@+id/takePicBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Add Schedule"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp" />
+
+    <Button
+        android:id="@+id/toDoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Add To Do List"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="175dp" />
+
+
+</RelativeLayout>

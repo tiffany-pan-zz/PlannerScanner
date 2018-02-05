@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TextReader</string>
+    <string name="title_activity_launcher">LauncherActivity</string>
+    <string name="title_activity_to_do_list">ToDoListActivity</string>
+</resources>
